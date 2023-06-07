@@ -55,26 +55,7 @@ function mergeSort(arr, left, right) {
   }
 }
 
-/*
-1. Utilize um array temporário para a mesclagem dos subarrays em vez de criar novos arrays temporários a cada chamada recursiva. 
-Isso economiza espaço e evita alocações desnecessárias de memória. Você pode criar um array temporário uma vez, fora da função merge, 
-e passá-lo como um parâmetro adicional nas chamadas recursivas.
-
-2. Adicione uma verificação para verificar se o array já está ordenado antes de realizar a mesclagem dos subarrays. 
-Se o subarray esquerdo terminar com o maior elemento menor ou igual ao menor elemento do subarray direito, 
-isso significa que o array já está ordenado e não é necessário realizar a mesclagem. 
-Isso pode ajudar a melhorar o desempenho em casos em que o array já está parcialmente ou totalmente ordenado.
-
-3. Considere usar o insertion sort para classificar pequenos subarrays. O Merge Sort tem um certo overhead devido à recursão e às operações de mesclagem,
-mas o Insertion Sort é mais eficiente em pequenos conjuntos de dados. 
-Portanto, você pode adicionar uma condição de parada recursiva para usar o Insertion Sort quando o tamanho do subarray for menor que um determinado limite.
-
-O código inclui as melhorias sugeridas, como o uso de um array temporário para a mesclagem dos subarrays, 
-verificação de array já ordenado antes da mesclagem, utilização do Insertion Sort para pequenos subarrays, 
-verificação de tipo e validação de entrada, e comentários explicativos ao longo
-
-*/
-
+// Melhoria
 function improvedMerge(arr, left, mid, right, temp) { // Função para mesclar dois subarrays ordenados
   const n1 = mid - left + 1; // Tamanho do primeiro subarray
   const n2 = right - mid; // Tamanho do segundo subarray

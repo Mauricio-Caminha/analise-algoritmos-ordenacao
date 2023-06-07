@@ -34,14 +34,6 @@ function improvedSelectionSort(arr) {
   return arr;
 }
 
-/*
-1. Nesta melhoria, evitamos a troca entre o elemento atual e o menor elemento encontrado se eles já estiverem na posição correta. 
-Para isso, trocamos o elemento mínimo diretamente com o elemento na posição i, em vez de trocar o elemento atual com o mínimo.
-
-Essa melhoria reduz o número total de trocas realizadas durante o algoritmo de Selection Sort e pode melhorar o desempenho em casos onde 
-a quantidade de trocas é significativa.
-*/
-
 module.exports = {
   selectionSort,
   improvedSelectionSort

@@ -34,17 +34,7 @@ function heapSort(arr) {
   return arr;
 }
 
-/*
-1. Utilize a desestruturação de arrays para trocar os valores dos elementos. Em vez de usar [arr[i], arr[largest]] = [arr[largest], arr[i]];
-você pode usar a desestruturação para trocar os valores diretamente: [arr[i], arr[largest]] = [arr[largest], arr[i]];. 
-Isso torna o código mais legível.
-
-2. Adicione verificação de tipo e validação de entrada para garantir que o argumento fornecido seja um array numérico válido. 
-Você pode adicionar uma verificação no início da função heapSort para verificar se arr é um array e se todos os elementos são números.
-Isso evita erros e resultados inesperados.
-
-*/
-
+// Melhoria
 function improvedHeapify(arr, n, i) { // Função para criar um heap máximo
   let largest = i; // Inicializa o maior como raiz
   let left = 2 * i + 1; // Índice do filho esquerdo

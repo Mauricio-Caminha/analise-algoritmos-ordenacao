@@ -84,7 +84,7 @@ function analisaTempoConsumo(arr, func, algoritimodeBuscaNome) {
 
   const estatisticasMemoriaDepois = v8.getHeapStatistics();
 
-  const consumoDeMemoria = estatisticasMemoriaDepois.used_heap_size - estatisticasMemoriaAntes.used_heap_size;
+  const consumoDeMemoria = Math.abs(estatisticasMemoriaDepois.used_heap_size - estatisticasMemoriaAntes.used_heap_size);
 
   console.log(`Consumo de memória da ${algoritimodeBuscaNome}: ${consumoDeMemoria} bytes`);
 }

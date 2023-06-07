@@ -28,12 +28,6 @@ function improvedInsertionSort(arr) {
   return arr;
 }
 
-/*
-1. Otimização para sair do loop interno mais cedo: Ao invés de sempre verificar se arr[j] > current, 
-você pode realizar essa verificação apenas uma vez e armazenar o resultado em uma variável booleana. 
-Isso evita a comparação repetida dentro do loop.
-
-*/
 module.exports = {
   insertionSort,
   improvedInsertionSort
